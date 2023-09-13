@@ -8,10 +8,16 @@
 import SwiftUI
 
 @main
-struct Code_VaultApp: App {
+struct VaultApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if os(macOS)
+            MacOSView()
+            #endif
+            
+            #if os(iOS)
+            iOSView()
+            #endif
         }
     }
 }

@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F05B73B2AB180F300F66045 /* Code_VaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05B73A2AB180F300F66045 /* Code_VaultApp.swift */; };
-		4F05B73D2AB180F300F66045 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05B73C2AB180F300F66045 /* ContentView.swift */; };
 		4F05B73F2AB180F400F66045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F05B73E2AB180F400F66045 /* Assets.xcassets */; };
 		4F05B7432AB180F400F66045 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F05B7422AB180F400F66045 /* Preview Assets.xcassets */; };
+		4F05B7512AB1812000F66045 /* MacOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05B74A2AB1811F00F66045 /* MacOSView.swift */; };
+		4F05B7522AB1812000F66045 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05B74B2AB1811F00F66045 /* NavigationBar.swift */; };
+		4F05B7532AB1812000F66045 /* iOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05B74C2AB1811F00F66045 /* iOSView.swift */; };
+		4F05B7542AB1812000F66045 /* VaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05B74D2AB1812000F66045 /* VaultApp.swift */; };
+		4F05B7562AB1812000F66045 /* ChatGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05B74F2AB1812000F66045 /* ChatGPT.swift */; };
+		4F05B7592AB181B800F66045 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F05B7582AB181B800F66045 /* ChatGPTSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F05B7372AB180F300F66045 /* Code Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code Vault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F05B73A2AB180F300F66045 /* Code_VaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_VaultApp.swift; sourceTree = "<group>"; };
-		4F05B73C2AB180F300F66045 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F05B73E2AB180F400F66045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F05B7402AB180F400F66045 /* Code_Vault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Code_Vault.entitlements; sourceTree = "<group>"; };
 		4F05B7422AB180F400F66045 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F05B74A2AB1811F00F66045 /* MacOSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSView.swift; sourceTree = "<group>"; };
+		4F05B74B2AB1811F00F66045 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		4F05B74C2AB1811F00F66045 /* iOSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSView.swift; sourceTree = "<group>"; };
+		4F05B74D2AB1812000F66045 /* VaultApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaultApp.swift; sourceTree = "<group>"; };
+		4F05B74F2AB1812000F66045 /* ChatGPT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F05B7592AB181B800F66045 /* ChatGPTSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +60,11 @@
 		4F05B7392AB180F300F66045 /* Code Vault */ = {
 			isa = PBXGroup;
 			children = (
-				4F05B73A2AB180F300F66045 /* Code_VaultApp.swift */,
-				4F05B73C2AB180F300F66045 /* ContentView.swift */,
+				4F05B74D2AB1812000F66045 /* VaultApp.swift */,
+				4F05B74F2AB1812000F66045 /* ChatGPT.swift */,
+				4F05B74C2AB1811F00F66045 /* iOSView.swift */,
+				4F05B74A2AB1811F00F66045 /* MacOSView.swift */,
+				4F05B74B2AB1811F00F66045 /* NavigationBar.swift */,
 				4F05B73E2AB180F400F66045 /* Assets.xcassets */,
 				4F05B7402AB180F400F66045 /* Code_Vault.entitlements */,
 				4F05B7412AB180F400F66045 /* Preview Content */,
@@ -85,6 +96,9 @@
 			dependencies = (
 			);
 			name = "Code Vault";
+			packageProductDependencies = (
+				4F05B7582AB181B800F66045 /* ChatGPTSwift */,
+			);
 			productName = "Code Vault";
 			productReference = 4F05B7372AB180F300F66045 /* Code Vault.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 4F05B72E2AB180F300F66045;
+			packageReferences = (
+				4F05B7572AB181B800F66045 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+			);
 			productRefGroup = 4F05B7382AB180F300F66045 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F05B73D2AB180F300F66045 /* ContentView.swift in Sources */,
-				4F05B73B2AB180F300F66045 /* Code_VaultApp.swift in Sources */,
+				4F05B7522AB1812000F66045 /* NavigationBar.swift in Sources */,
+				4F05B7512AB1812000F66045 /* MacOSView.swift in Sources */,
+				4F05B7542AB1812000F66045 /* VaultApp.swift in Sources */,
+				4F05B7562AB1812000F66045 /* ChatGPT.swift in Sources */,
+				4F05B7532AB1812000F66045 /* iOSView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +289,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +328,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -354,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F05B7572AB181B800F66045 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F05B7582AB181B800F66045 /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F05B7572AB181B800F66045 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F05B72F2AB180F300F66045 /* Project object */;
 }
