@@ -6,6 +6,9 @@ AI-driven code snippets manager for all devs.
 
 Using `(⌘-shift-P)` automatically **store your code** in the correct folder with an **AI-generated** Title and description of what your code does.
 
+![codeVault](https://github.com/ignaciojuarez/Code-Vault/assets/62676603/955f5518-b7c5-413f-998b-3f6dcabee00d)
+
+
 ## Features
 * Supports all IDEs & programming languages
 * AI **language detection** for categorization
