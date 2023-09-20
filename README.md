@@ -16,7 +16,7 @@ Using `(⌘-shift-P)` automatically **store your code** in the correct folder wi
 * **Custom save-code macro**. Default (⌘-shift-P)
 
 ## Development
-* OpenAI API for all AI feeatures
+* OpenAI API for all AI features
 * Xcode & SwiftUI for crossplatform support
 * Cocoapods for MacOS native features
   
